@@ -5,6 +5,6 @@ Pillow
 scikit-image
 scikit-learn
 scipy
-tensorflow
+tensorflow==1.0.0
 click
 emoji

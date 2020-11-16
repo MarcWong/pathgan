@@ -19,7 +19,12 @@ import glob
 
 
 def load_image(img_path, input_size):
-    img =  mpimg.imread(img_path)
+    # uncomment next line for .jpg
+    # img =  mpimg.imread(img_path)
+
+    # uncomment next line for .png
+    img = mpimg.imread(img_path, 0)
+
     img_size = (img.shape[0], img.shape[1])
 
     model_input_sizes ={
@@ -35,7 +40,11 @@ def load_image(img_path, input_size):
 
     
 def file_paths_for_images(path):
-    paths = sorted(glob.glob(path+"/*.jpg"))[:200]
+    # uncomment next line for .jpg
+    # paths = sorted(glob.glob(path+"/*.jpg"))[:200]
+
+    # uncomment next line for .png
+    paths = sorted(glob.glob(path+"/*.png"))[:200]
     return paths
     
 

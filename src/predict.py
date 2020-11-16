@@ -66,7 +66,7 @@ def predict(img_path):
     dropout                 = 0.1
     dataset_path            = '/root/sharedfolder/predict_scanpaths/finetune_saltinet_isun/input/salient360_EVAL_noTime.hdf5'
     model360                = 'false'
-    weights_generator       = '../weights/generator_single_weights.h5'
+    weights_generator       = '../weights/generator_weights.h5'
     opt = RMSprop(lr=lr, rho=0.9, epsilon=1e-08, decay=0.0)
 
 
@@ -139,7 +139,7 @@ def predict_and_save(imgs_path, out_path):
     # Preproces and load images
 
     paths = utils.file_paths_for_images(imgs_path)
-
+    print(paths)
     for i, path in enumerate(paths):
         print('Working on image %d of %d' % (i+1, len(paths)))
 

@@ -1,10 +1,10 @@
 numpy
 h5py
-Keras==2.0.9
+Keras==2.1.6
 Pillow
 scikit-image
 scikit-learn
 scipy
-tensorflow-gpu==1.0.0
+tensorflow-gpu==1.5.0
 click
 emoji
