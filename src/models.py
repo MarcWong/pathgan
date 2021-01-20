@@ -11,7 +11,7 @@ import tensorflow as tf
 import argparse
 
 def decoder(lstm_activation=None, optimizer=None, weights=None):
-    print "Setting up decoder"
+    print ("Setting up decoder")
     # Decoder -------------------------------------------
     # 1. Scanpath input
     main_input = Input(shape=(63,4))
@@ -60,7 +60,7 @@ def decoder(lstm_activation=None, optimizer=None, weights=None):
 
 def generator(n_hidden_gen=None, lstm_activation=None, dropout=None, optimizer=None, loss=None, weights=None, G=None, loss_weights=None):
     # Encoder -------------------------------------------
-    print "Setting up generator"
+    print ("Setting up generator")
 
     generator = Sequential()
     main_input = Input(shape=(224, 224, 3)) 
@@ -102,7 +102,7 @@ def generator(n_hidden_gen=None, lstm_activation=None, dropout=None, optimizer=N
 
 def gen_dec(content_loss=None, optimizer=None, loss_weights=None, generator=None, decoder=None, G=None, shape=(224, 224, 3)):
 
-    print "Setting up combined net"
+    print ("Setting up combined net")
     generator_input = Input(shape=shape)
     dec_img_input = Input(shape=shape)
 

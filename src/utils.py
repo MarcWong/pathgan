@@ -41,10 +41,10 @@ def load_image(img_path, input_size):
     
 def file_paths_for_images(path):
     # uncomment next line for .jpg
-    # paths = sorted(glob.glob(path+"/*.jpg"))[:200]
+    # paths = sorted(glob.glob(path+"/*.jpg"))[:1000]
 
     # uncomment next line for .png
-    paths = sorted(glob.glob(path+"/*.png"))[:200]
+    paths = sorted(glob.glob(path+"/*.png"))[:1000]
     return paths
     
 
